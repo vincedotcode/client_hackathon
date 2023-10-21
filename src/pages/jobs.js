@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Layout from './components/layout';
 import { useRouter } from 'next/router';
-import fetchJobs from '../pages/api/getJobs';
-import fetchJobDetails from '../pages/api/getJobs'
+import fetchJobs, { fetchJobDetails } from '../pages/api/getJobs';
 
 export default function Jobs() {
     const [jobs, setJobs] = useState([]);
